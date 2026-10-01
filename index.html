@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Codornas Andrade - Ovos de codorna frescos e em conserva com qualidade e carinho.">
+  <title>Codornas Andrade | Ovos de Codorna de Qualidade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ========== CABEÇALHO FIXO ========== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">🥚</span>
+        <span class="logo-text">Codornas Andrade</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">🏠 Início</a></li>
+          <li><a href="#produtos" class="nav-link">🥚 Produtos</a></li>
+          <li><a href="#carrinho" class="nav-link">🛒 Carrinho <span class="cart-count" id="cart-count">0</span></a></li>
+          <li><a href="#sobre" class="nav-link">🐦 Sobre nós</a></li>
+          <li><a href="#suporte" class="nav-link">💬 Suporte</a></li>
+          <li><a href="https://instagram.com/codornas_andrade" target="_blank" rel="noopener" class="nav-link">📱 Instagram</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO / PÁGINA INICIAL ========== -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">O sabor e a qualidade da Codornas Andrade na sua mesa.</h1>
+        <p class="hero-text">Ovos de codorna selecionados e ovos em conserva preparados com qualidade e carinho para você.</p>
+        <div class="hero-buttons">
+          <a href="#produtos" class="btn btn-primary">Comprar agora</a>
+          <a href="#sobre" class="btn btn-secondary">Conheça a Codornas Andrade</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DESTAQUES ========== -->
+    <section class="highlights">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <span class="highlight-icon">🥚</span>
+            <h3>Produtos de qualidade</h3>
+            <p>Selecionados com rigor e cuidado</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🚚</span>
+            <h3>Encomendas e entregas</h3>
+            <p>Combinamos a melhor forma de entrega</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">💳</span>
+            <h3>Compra fácil</h3>
+            <p>Peça pelo WhatsApp de forma rápida</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">❤️</span>
+            <h3>Produção com carinho</h3>
+            <p>Dedicação em cada etapa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRODUTOS ========== -->
+    <section class="products" id="produtos">
+      <div class="container">
+        <h2 class="section-title">Nossos produtos</h2>
+        <p class="section-subtitle">Escolha a quantidade e adicione ao carrinho</p>
+
+        <div class="products-grid">
+          <!-- Produto 1: Ovos de Codorna -->
+          <article class="product-card" data-id="ovos-frescos" data-name="Ovos de Codorna" data-price="18.00">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&h=400&fit=crop" alt="Ovos de codorna frescos" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">🥚 Ovos de Codorna</h3>
+              <p class="product-desc">Ovos de codorna frescos e selecionados.</p>
+              <!-- PREÇO EDITÁVEL: altere o valor abaixo e o data-price no article -->
+              <p class="product-price">R$ <span class="price-value">18,00</span></p>
+              <div class="product-actions">
+                <div class="qty-control">
+                  <button type="button" class="qty-btn qty-minus" aria-label="Diminuir">−</button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Quantidade">
+                  <button type="button" class="qty-btn qty-plus" aria-label="Aumentar">+</button>
+                </div>
+                <button type="button" class="btn btn-add-cart">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produto 2: Ovos em Conserva -->
+          <article class="product-card" data-id="ovos-conserva" data-name="Ovos de Codorna em Conserva" data-price="22.00">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=500&h=400&fit=crop" alt="Ovos de codorna em conserva" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">🥫 Ovos de Codorna em Conserva</h3>
+              <p class="product-desc">Ovos de codorna preparados em conserva, prontos para consumir.</p>
+              <!-- PREÇO EDITÁVEL: altere o valor abaixo e o data-price no article -->
+              <p class="product-price">R$ <span class="price-value">22,00</span></p>
+              <div class="product-actions">
+                <div class="qty-control">
+                  <button type="button" class="qty-btn qty-minus" aria-label="Diminuir">−</button>
+                  <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Quantidade">
+                  <button type="button" class="qty-btn qty-plus" aria-label="Aumentar">+</button>
+                </div>
+                <button type="button" class="btn btn-add-cart">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CARRINHO ========== -->
+    <section class="cart-section" id="carrinho">
+      <div class="container">
+        <h2 class="section-title">🛒 Seu carrinho</h2>
+        <div class="cart-wrapper">
+          <div class="cart-items" id="cart-items">
+            <p class="cart-empty" id="cart-empty">Seu carrinho está vazio. Adicione produtos acima!</p>
+          </div>
+          <div class="cart-summary" id="cart-summary" hidden>
+            <div class="cart-total-row">
+              <span>Total:</span>
+              <strong id="cart-total">R$ 0,00</strong>
+            </div>
+            <button type="button" class="btn btn-whatsapp" id="btn-whatsapp">
+              Finalizar pedido pelo WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <h2 class="section-title">Sobre a Codornas Andrade</h2>
+        <p class="about-intro">
+          A Codornas Andrade nasceu com o objetivo de oferecer produtos de qualidade e levar o sabor dos ovos de codorna para mais pessoas. Trabalhamos com dedicação, cuidado e atenção em cada etapa, buscando sempre oferecer produtos frescos e bem preparados para nossos clientes.
+        </p>
+        <div class="about-grid">
+          <div class="about-card">
+            <span class="about-icon">📖</span>
+            <h3>Nossa história</h3>
+            <p>Uma empresa familiar dedicada à criação de codornas e à produção de ovos de excelência.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon">💪</span>
+            <h3>Nossa dedicação</h3>
+            <p>Cuidamos de cada detalhe, do manejo das aves até a embalagem do produto final.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon">⭐</span>
+            <h3>Qualidade dos produtos</h3>
+            <p>Ovos selecionados e conserva preparada com ingredientes de confiança.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon">🤝</span>
+            <h3>Atendimento aos clientes</h3>
+            <p>Estamos sempre disponíveis pelo WhatsApp e Instagram para atender você.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== INSTAGRAM ========== -->
+    <section class="instagram-section" id="instagram">
+      <div class="container">
+        <h2 class="section-title">Acompanhe a Codornas Andrade</h2>
+        <p class="section-subtitle">Quer acompanhar nossa criação, novidades, produtos e o dia a dia da Codornas Andrade?</p>
+        <div class="instagram-box">
+          <span class="ig-handle">@codornas_andrade</span>
+          <a href="https://instagram.com/codornas_andrade" target="_blank" rel="noopener" class="btn btn-instagram">
+            Seguir no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SUPORTE ========== -->
+    <section class="support" id="suporte">
+      <div class="container">
+        <h2 class="section-title">Precisa de ajuda?</h2>
+        <div class="support-contacts">
+          <div class="contact-card">
+            <span class="contact-icon">📱</span>
+            <h3>WhatsApp</h3>
+            <p>(42) 9903-4372</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">📸</span>
+            <h3>Instagram</h3>
+            <p>@codornas_andrade</p>
+          </div>
+        </div>
+        <a href="https://wa.me/554299034372" target="_blank" rel="noopener" class="btn btn-whatsapp btn-center">
+          Falar conosco pelo WhatsApp
+        </a>
+
+        <div class="faq">
+          <h3 class="faq-title">Perguntas frequentes</h3>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Como faço meu pedido?</summary>
+              <p>Adicione os produtos ao carrinho, ajuste as quantidades e clique em “Finalizar pedido pelo WhatsApp”. Enviaremos a mensagem pronta para você confirmar.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Quais produtos estão disponíveis?</summary>
+              <p>Atualmente trabalhamos com ovos de codorna frescos e ovos de codorna em conserva. Novidades serão divulgadas no Instagram.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Como funciona a entrega?</summary>
+              <p>Combinamos a melhor forma de entrega ou retirada conforme a sua região. Entre em contato pelo WhatsApp para combinarmos.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Posso fazer uma encomenda?</summary>
+              <p>Sim! Encomendas são bem-vindas. Fale conosco pelo WhatsApp informando o que precisa e a data desejada.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Como entrar em contato?</summary>
+              <p>Pelo WhatsApp (42) 9903-4372 ou pelo Instagram @codornas_andrade. Estamos prontos para te atender!</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">🥚</span>
+          <strong>Codornas Andrade</strong>
+          <p>Qualidade e dedicação em cada produto.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#suporte">Suporte</a></li>
+            <li><a href="https://instagram.com/codornas_andrade" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>Instagram: @codornas_andrade</p>
+          <p>WhatsApp: (42) 9903-4372</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Codornas Andrade. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de notificação -->
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
