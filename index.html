@@ -3,312 +3,523 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Codornas Andrade - Ovos de codorna frescos e em conserva com qualidade e carinho.">
-  <meta name="theme-color" content="#1a3a6b">
-  <title>Codornas Andrade | Ovos de Codorna de Qualidade</title>
-  <!-- Caminhos relativos = funcionam no GitHub Pages (raiz ou subpasta) -->
-  <link rel="stylesheet" href="./style.css">
+  <meta name="description" content="Codornas Andrade - Ovos de codorna frescos e de qualidade. Criação responsável em Nova Rússia / Ponta Grossa, Paraná.">
+  <title>Codornas Andrade | Ovos de Codorna Frescos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ========== CABEÇALHO ========== -->
+  <!-- Header / Navbar -->
   <header class="header" id="header">
     <div class="container header-inner">
       <a href="#inicio" class="logo">
-        <span class="logo-mark">🥚</span>
-        <span class="logo-text">Codornas <em>Andrade</em></span>
+        <span class="logo-icon"><i class="fas fa-egg"></i></span>
+        <span class="logo-text">Codornas <strong>Andrade</strong></span>
       </a>
-
-      <nav class="nav" id="nav" aria-label="Menu principal">
+      <nav class="nav" id="nav">
         <ul class="nav-list">
           <li><a href="#inicio" class="nav-link">Início</a></li>
           <li><a href="#produtos" class="nav-link">Produtos</a></li>
-          <li>
-            <a href="#carrinho" class="nav-link nav-cart">
-              Carrinho
-              <span class="cart-badge" id="cart-count">0</span>
-            </a>
-          </li>
-          <li><a href="#sobre" class="nav-link">Sobre</a></li>
-          <li><a href="#suporte" class="nav-link">Suporte</a></li>
-          <li>
-            <a href="https://www.instagram.com/codornas_andrade/" target="_blank" rel="noopener noreferrer" class="nav-link nav-ig">
-              Instagram
-            </a>
-          </li>
+          <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+          <li><a href="#receitas" class="nav-link">Receitas</a></li>
+          <li><a href="#criacao" class="nav-link">Criação</a></li>
+          <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
       </nav>
-
-      <button class="menu-btn" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- ========== HERO ========== -->
-    <section class="hero" id="inicio">
-      <div class="hero-bg"></div>
-      <div class="hero-content container">
-        <p class="hero-eyebrow">Qualidade que você sente em cada ovo</p>
-        <h1 class="hero-title">O sabor e a qualidade da Codornas Andrade na sua mesa</h1>
-        <p class="hero-lead">Ovos de codorna selecionados e ovos em conserva preparados com carinho para você e sua família.</p>
-        <div class="hero-actions">
-          <a href="#produtos" class="btn btn-gold">Comprar agora</a>
-          <a href="#sobre" class="btn btn-outline">Conheça a empresa</a>
-        </div>
-      </div>
-      <div class="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="currentColor"/></svg>
-      </div>
-    </section>
-
-    <!-- ========== DESTAQUES ========== -->
-    <section class="features">
-      <div class="container">
-        <div class="features-grid">
-          <div class="feature">
-            <div class="feature-icon">🥚</div>
-            <h3>Qualidade</h3>
-            <p>Produtos selecionados com rigor</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">🚚</div>
-            <h3>Entrega</h3>
-            <p>Encomendas e entregas combinadas</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">💳</div>
-            <h3>Fácil</h3>
-            <p>Peça pelo WhatsApp em minutos</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">❤️</div>
-            <h3>Carinho</h3>
-            <p>Produção feita com dedicação</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== PRODUTOS ========== -->
-    <section class="products" id="produtos">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-label">Nossos produtos</p>
-          <h2 class="section-title">Escolha e adicione ao carrinho</h2>
-        </header>
-
-        <div class="products-grid">
-          <!-- Produto 1 -->
-          <article class="product" data-id="ovos-frescos" data-name="Ovos de Codorna" data-price="18.00">
-            <div class="product-media">
-              <div class="product-img product-img--eggs" role="img" aria-label="Ovos de codorna frescos"></div>
-              <span class="product-tag">Fresco</span>
-            </div>
-            <div class="product-body">
-              <h3 class="product-title">Ovos de Codorna</h3>
-              <p class="product-desc">Ovos de codorna frescos e selecionados, ideais para o dia a dia.</p>
-              <!-- PREÇO: altere data-price no article e o texto abaixo -->
-              <p class="product-price">R$ <span class="price-value">18,00</span></p>
-              <div class="product-footer">
-                <div class="qty">
-                  <button type="button" class="qty-btn qty-minus" aria-label="Diminuir">−</button>
-                  <input type="number" class="qty-input" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantidade">
-                  <button type="button" class="qty-btn qty-plus" aria-label="Aumentar">+</button>
-                </div>
-                <button type="button" class="btn btn-add">Adicionar</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Produto 2 -->
-          <article class="product" data-id="ovos-conserva" data-name="Ovos de Codorna em Conserva" data-price="22.00">
-            <div class="product-media">
-              <div class="product-img product-img--jar" role="img" aria-label="Ovos de codorna em conserva"></div>
-              <span class="product-tag product-tag--gold">Pronto</span>
-            </div>
-            <div class="product-body">
-              <h3 class="product-title">Ovos em Conserva</h3>
-              <p class="product-desc">Ovos de codorna preparados em conserva, prontos para consumir.</p>
-              <!-- PREÇO: altere data-price no article e o texto abaixo -->
-              <p class="product-price">R$ <span class="price-value">22,00</span></p>
-              <div class="product-footer">
-                <div class="qty">
-                  <button type="button" class="qty-btn qty-minus" aria-label="Diminuir">−</button>
-                  <input type="number" class="qty-input" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantidade">
-                  <button type="button" class="qty-btn qty-plus" aria-label="Aumentar">+</button>
-                </div>
-                <button type="button" class="btn btn-add">Adicionar</button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== CARRINHO ========== -->
-    <section class="cart" id="carrinho">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-label">Pedido</p>
-          <h2 class="section-title">Seu carrinho</h2>
-        </header>
-
-        <div class="cart-box">
-          <div class="cart-list" id="cart-items">
-            <p class="cart-empty">Seu carrinho está vazio. Adicione produtos acima.</p>
-          </div>
-          <div class="cart-foot" id="cart-summary" hidden>
-            <div class="cart-total">
-              <span>Total</span>
-              <strong id="cart-total">R$ 0,00</strong>
-            </div>
-            <button type="button" class="btn btn-wa" id="btn-whatsapp">
-              Finalizar pedido no WhatsApp
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== SOBRE ========== -->
-    <section class="about" id="sobre">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-label">Quem somos</p>
-          <h2 class="section-title">Sobre a Codornas Andrade</h2>
-        </header>
-        <p class="about-text">
-          A Codornas Andrade nasceu com o objetivo de oferecer produtos de qualidade e levar o sabor dos ovos de codorna para mais pessoas. Trabalhamos com dedicação, cuidado e atenção em cada etapa, buscando sempre oferecer produtos frescos e bem preparados para nossos clientes.
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">Desde 2026 • Nova Rússia / Ponta Grossa - PR</span>
+        <h1>Ovos de codorna <span>frescos</span> e de qualidade</h1>
+        <p class="hero-desc">
+          Na Codornas Andrade, cuidamos de cada detalhe da criação para oferecer ovos nutritivos, saborosos e produzidos com responsabilidade. Do campo à sua mesa.
         </p>
-        <div class="about-grid">
-          <div class="about-card">
-            <span>📖</span>
-            <h3>Nossa história</h3>
-            <p>Empresa familiar dedicada à criação de codornas e à produção de ovos de excelência.</p>
-          </div>
-          <div class="about-card">
-            <span>💪</span>
-            <h3>Dedicação</h3>
-            <p>Cuidamos de cada detalhe, do manejo das aves até a embalagem final.</p>
-          </div>
-          <div class="about-card">
-            <span>⭐</span>
-            <h3>Qualidade</h3>
-            <p>Ovos selecionados e conserva preparada com ingredientes de confiança.</p>
-          </div>
-          <div class="about-card">
-            <span>🤝</span>
-            <h3>Atendimento</h3>
-            <p>Sempre disponíveis pelo WhatsApp e Instagram para te atender.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== INSTAGRAM ========== -->
-    <section class="ig" id="instagram">
-      <div class="container ig-inner">
-        <p class="section-label light">Redes</p>
-        <h2 class="section-title light">Acompanhe a Codornas Andrade</h2>
-        <p class="ig-text">Quer ver nossa criação, novidades e o dia a dia?</p>
-        <p class="ig-handle">@codornas_andrade</p>
-        <a href="https://www.instagram.com/codornas_andrade/" target="_blank" rel="noopener noreferrer" class="btn btn-ig">
-          Seguir no Instagram
-        </a>
-      </div>
-    </section>
-
-    <!-- ========== SUPORTE ========== -->
-    <section class="support" id="suporte">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-label">Ajuda</p>
-          <h2 class="section-title">Precisa de ajuda?</h2>
-        </header>
-
-        <div class="support-cards">
-          <div class="support-card">
-            <span class="support-icon">📱</span>
-            <h3>WhatsApp</h3>
-            <p>(42) 9903-4372</p>
-          </div>
-          <div class="support-card">
-            <span class="support-icon">📸</span>
-            <h3>Instagram</h3>
-            <p>@codornas_andrade</p>
-          </div>
-        </div>
-
-        <div class="support-cta">
-          <a href="https://wa.me/554299034372" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
-            Falar conosco pelo WhatsApp
+        <div class="hero-buttons">
+          <a href="#produtos" class="btn btn-primary">
+            <i class="fas fa-shopping-bag"></i> Comprar agora
+          </a>
+          <a href="https://wa.me/554299034372?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20ovos%20de%20codorna." target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
           </a>
         </div>
-
-        <div class="faq">
-          <h3 class="faq-title">Perguntas frequentes</h3>
-          <details class="faq-item">
-            <summary>Como faço meu pedido?</summary>
-            <p>Adicione os produtos ao carrinho, ajuste as quantidades e clique em “Finalizar pedido no WhatsApp”. A mensagem já vai pronta para você confirmar.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Quais produtos estão disponíveis?</summary>
-            <p>Ovos de codorna frescos e ovos de codorna em conserva. Novidades são divulgadas no Instagram.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Como funciona a entrega?</summary>
-            <p>Combinamos a melhor forma de entrega ou retirada conforme a sua região. Fale conosco pelo WhatsApp.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Posso fazer uma encomenda?</summary>
-            <p>Sim! Encomendas são bem-vindas. Informe o que precisa e a data desejada pelo WhatsApp.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Como entrar em contato?</summary>
-            <p>WhatsApp (42) 9903-4372 ou Instagram @codornas_andrade.</p>
-          </details>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&q=80" alt="Ovos de codorna frescos" onerror="this.src='https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=600&q=80'; this.onerror=null;">
+        <div class="hero-card">
+          <i class="fas fa-leaf"></i>
+          <div>
+            <strong>Produção responsável</strong>
+            <span>Cuidado diário com as aves</span>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- ========== RODAPÉ ========== -->
-  <footer class="footer">
+  <!-- Destaques de produtos -->
+  <section class="highlights">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="logo-mark">🥚</span>
-          <strong>Codornas Andrade</strong>
-          <p>Qualidade e dedicação em cada produto.</p>
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <i class="fas fa-egg"></i>
+          <h3>Ovos Frescos</h3>
+          <p>Coletados diariamente com todo cuidado</p>
         </div>
-        <div class="footer-col">
-          <h4>Links</h4>
-          <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#suporte">Suporte</a></li>
-            <li><a href="https://www.instagram.com/codornas_andrade/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          </ul>
+        <div class="highlight-item">
+          <i class="fas fa-heart"></i>
+          <h3>Nutrição Natural</h3>
+          <p>Ricos em proteínas e nutrientes essenciais</p>
         </div>
-        <div class="footer-col">
-          <h4>Contato</h4>
-          <p>@codornas_andrade</p>
-          <p>(42) 9903-4372</p>
+        <div class="highlight-item">
+          <i class="fas fa-truck"></i>
+          <h3>Entrega Local</h3>
+          <p>Atendemos Nova Rússia e região de Ponta Grossa</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-handshake"></i>
+          <h3>Atendimento</h3>
+          <p>Compromisso com qualidade e clientes</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Codornas Andrade. Todos os direitos reservados.</p>
+    </div>
+  </section>
+
+  <!-- Sobre a empresa -->
+  <section class="about" id="sobre">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d973d8b?w=600&q=80" alt="Ambiente rural e natureza">
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Nossa história</span>
+        <h2>Sobre a Codornas Andrade</h2>
+        <p>
+          A Codornas Andrade nasceu em 2026 com o propósito de produzir e oferecer ovos de codorna de qualidade, valorizando a criação responsável das aves e o atendimento próximo aos clientes.
+        </p>
+        <p>
+          Começamos como uma pequena produção familiar, focada no bem-estar das codornas, na higiene e na frescura dos ovos. Hoje seguimos com o mesmo cuidado de sempre: alimentação adequada, ambiente limpo e coleta diária para que você receba um produto fresco e nutritivo.
+        </p>
+        <ul class="about-list">
+          <li><i class="fas fa-check"></i> Criação iniciada em 2026</li>
+          <li><i class="fas fa-check"></i> Foco em qualidade e frescor</li>
+          <li><i class="fas fa-check"></i> Atendimento em Nova Rússia / Ponta Grossa - PR</li>
+          <li><i class="fas fa-check"></i> Compromisso com o cliente</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos / Loja -->
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa loja</span>
+        <h2>Produtos</h2>
+        <p>Escolha os ovos de codorna frescos e outros produtos da Codornas Andrade</p>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Preenchido via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nutrição</span>
+        <h2>Benefícios dos ovos de codorna</h2>
+        <p>Pequenos no tamanho, grandes em valor nutricional. Informações simples e claras.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-drumstick-bite"></i></div>
+          <h3>Fonte de proteínas</h3>
+          <p>Oferecem proteína de boa qualidade, importante para músculos, ossos e funções do organismo.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-capsules"></i></div>
+          <h3>Vitaminas e minerais</h3>
+          <p>Contêm vitaminas do complexo B, vitamina A, ferro, zinco e colina, entre outros nutrientes.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Práticos no dia a dia</h3>
+          <p>Tamanho ideal para porções individuais, lanches, petiscos e refeições leves.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Versáteis na cozinha</h3>
+          <p>Combinam com saladas, conservas, espetinhos, canapés e diversas receitas criativas.</p>
+        </div>
+      </div>
+      <p class="benefits-note">
+        <i class="fas fa-info-circle"></i> Os ovos de codorna fazem parte de uma alimentação equilibrada. Não substituem orientação profissional de saúde.
+      </p>
+    </div>
+  </section>
+
+  <!-- Receitas -->
+  <section class="recipes" id="receitas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Na cozinha</span>
+        <h2>Receitas com ovos de codorna</h2>
+        <p>Ideias práticas e saborosas para aproveitar nossos ovos</p>
+      </div>
+      <div class="recipe-filters">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="salada">Saladas</button>
+        <button class="filter-btn" data-filter="petisco">Petiscos</button>
+        <button class="filter-btn" data-filter="conserva">Conservas</button>
+      </div>
+      <div class="recipes-grid" id="recipesGrid">
+        <!-- Preenchido via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Como criamos -->
+  <section class="raising" id="criacao">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nosso cuidado</span>
+        <h2>Como criamos as codornas</h2>
+        <p>Conheça de forma simples as etapas e os cuidados diários da nossa produção</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-home"></i></div>
+          <div class="timeline-content">
+            <h3>Ambiente adequado</h3>
+            <p>Gaiolas bem organizadas, arejadas, com temperatura e umidade controladas, sem correntes de vento diretas. Espaço suficiente para o conforto das aves.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-seedling"></i></div>
+          <div class="timeline-content">
+            <h3>Alimentação</h3>
+            <p>Ração balanceada conforme a fase (inicial e postura), com proteína adequada e cálcio para boa formação da casca. Oferta diária controlada e fresca.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-tint"></i></div>
+          <div class="timeline-content">
+            <h3>Água limpa</h3>
+            <p>Água potável sempre à disposição, com bebedouros limpos e troca frequente para evitar contaminação.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-broom"></i></div>
+          <div class="timeline-content">
+            <h3>Higiene e organização</h3>
+            <p>Limpeza regular das gaiolas, retirada de dejetos e manutenção do ambiente seco e saudável para prevenir problemas.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-clock"></i></div>
+          <div class="timeline-content">
+            <h3>Crescimento e produção</h3>
+            <p>As codornas iniciam a postura por volta dos 35–45 dias. Em boas condições, cada fêmea pode produzir cerca de 250 a 300 ovos por ciclo.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="timeline-content">
+            <h3>Cuidados diários</h3>
+            <p>Coleta de ovos pelo menos duas vezes ao dia, observação do comportamento das aves, reposição de ração e água, e registro básico da produção.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabela de informações -->
+  <section class="info-table-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Referência rápida</span>
+        <h2>Tabela de informações da criação</h2>
+        <p>Resumo prático dos principais pontos do manejo</p>
+      </div>
+      <div class="table-wrapper">
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Informação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alimentação (postura)</td>
+              <td>Ração de postura (~20–23% proteína) + cálcio; cerca de 30–35 g por ave/dia</td>
+            </tr>
+            <tr>
+              <td>Água</td>
+              <td>Potável, sempre à vontade; bebedouros limpos</td>
+            </tr>
+            <tr>
+              <td>Início da postura</td>
+              <td>Entre 35 e 45 dias de idade</td>
+            </tr>
+            <tr>
+              <td>Produção de ovos</td>
+              <td>Aprox. 250 a 300 ovos por fêmea por ciclo (em boas condições)</td>
+            </tr>
+            <tr>
+              <td>Coleta de ovos</td>
+              <td>Pelo menos 2 vezes ao dia (manhã e tarde)</td>
+            </tr>
+            <tr>
+              <td>Temperatura ideal</td>
+              <td>Faixa aproximada de 18–28 °C para adultos</td>
+            </tr>
+            <tr>
+              <td>Higiene</td>
+              <td>Limpeza regular das gaiolas e retirada de dejetos</td>
+            </tr>
+            <tr>
+              <td>Rotina diária</td>
+              <td>Alimentar, verificar água, coletar ovos, observar as aves e limpar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="reviews" id="avaliacoes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2>O que nossos clientes dizem</h2>
+        <div class="rating-summary" id="ratingSummary">
+          <div class="avg-stars" id="avgStars"></div>
+          <span class="avg-text" id="avgText">Ainda sem avaliações</span>
+        </div>
+      </div>
+      <div class="reviews-grid" id="reviewsGrid">
+        <!-- Preenchido via JS + localStorage -->
+      </div>
+      <!-- Formulário de avaliação -->
+      <div class="review-form-wrapper">
+        <h3>Deixe sua avaliação</h3>
+        <form id="reviewForm" class="review-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reviewName">Nome *</label>
+              <input type="text" id="reviewName" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <label for="reviewPhone">Telefone (opcional)</label>
+              <input type="tel" id="reviewPhone" placeholder="(42) 99999-9999">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Avaliação *</label>
+            <div class="star-rating" id="starRating">
+              <i class="far fa-star" data-value="1"></i>
+              <i class="far fa-star" data-value="2"></i>
+              <i class="far fa-star" data-value="3"></i>
+              <i class="far fa-star" data-value="4"></i>
+              <i class="far fa-star" data-value="5"></i>
+            </div>
+            <input type="hidden" id="reviewStars" value="0" required>
+          </div>
+          <div class="form-group">
+            <label for="reviewComment">Comentário *</label>
+            <textarea id="reviewComment" rows="4" required placeholder="Conte como foi sua experiência com nossos ovos..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Enviar avaliação
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização / Entrega -->
+  <section class="location" id="entrega">
+    <div class="container location-grid">
+      <div class="location-content">
+        <span class="section-tag">Onde estamos</span>
+        <h2>Atendimento e entrega</h2>
+        <p>
+          Atendemos a região de <strong>Nova Rússia / Ponta Grossa, Paraná</strong>. Entre em contato para confirmar disponibilidade, horários e condições de entrega.
+        </p>
+        <ul class="location-list">
+          <li><i class="fas fa-map-marker-alt"></i> Região de Nova Rússia / Ponta Grossa - PR</li>
+          <li><i class="fas fa-clock"></i> Horário de atendimento: sob consulta (WhatsApp)</li>
+          <li><i class="fas fa-truck"></i> Área e taxa de entrega: a combinar</li>
+          <li><i class="fas fa-store"></i> Endereço / ponto de retirada: sob consulta</li>
+        </ul>
+        <a href="https://wa.me/554299034372?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20saber%20sobre%20entrega." target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
+        </a>
+      </div>
+      <div class="location-card">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3>Entrega local</h3>
+        <p>Consulte-nos pelo WhatsApp para saber se atendemos sua região e quais são as opções de retirada ou entrega.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fale conosco</span>
+        <h2>Contato</h2>
+        <p>Estamos prontos para atender você</p>
+      </div>
+      <div class="contact-cards">
+        <a href="https://wa.me/554299034372" target="_blank" rel="noopener" class="contact-card whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <p>(42) 9903-4372</p>
+          <span class="contact-action">Chamar no WhatsApp</span>
+        </a>
+        <a href="https://instagram.com/codornas_andrade" target="_blank" rel="noopener" class="contact-card instagram">
+          <i class="fab fa-instagram"></i>
+          <h3>Instagram</h3>
+          <p>@codornas_andrade</p>
+          <span class="contact-action">Seguir no Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <span class="logo-icon"><i class="fas fa-egg"></i></span>
+          <span class="logo-text">Codornas <strong>Andrade</strong></span>
+        </a>
+        <p>Ovos de codorna frescos e de qualidade. Produção responsável desde 2026.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/codornas_andrade" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/554299034372" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#receitas">Receitas</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p><i class="fab fa-whatsapp"></i> (42) 9903-4372</p>
+        <p><i class="fab fa-instagram"></i> @codornas_andrade</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nova Rússia / Ponta Grossa - PR</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Codornas Andrade. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-cart"></i> Seu carrinho</h3>
+      <button class="cart-close" id="cartClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Itens via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" disabled>
+        Finalizar pedido
+      </button>
+    </div>
+  </aside>
 
-  <script src="./script.js"></script>
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Finalizar pedido</h3>
+        <button class="modal-close" id="modalClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-group">
+          <label for="clientName">Nome completo *</label>
+          <input type="text" id="clientName" required placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label for="clientPhone">Telefone / WhatsApp *</label>
+          <input type="tel" id="clientPhone" required placeholder="(42) 99999-9999">
+        </div>
+        <div class="form-group">
+          <label>Resumo do pedido</label>
+          <div class="order-summary" id="orderSummary"></div>
+        </div>
+        <div class="form-group">
+          <label for="orderNotes">Observações</label>
+          <textarea id="orderNotes" rows="3" placeholder="Ex.: preferência de horário, ponto de referência..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="contactPref">Forma de contato preferida</label>
+          <select id="contactPref">
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Ligação">Ligação</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fab fa-whatsapp"></i> Enviar pedido pelo WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Recipe Modal -->
+  <div class="modal-overlay" id="recipeModal">
+    <div class="modal recipe-modal">
+      <div class="modal-header">
+        <h3 id="recipeModalTitle"></h3>
+        <button class="modal-close" id="recipeModalClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="recipe-modal-body" id="recipeModalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
